@@ -1,33 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./imagens/favicon-32x32.png" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub API - buscando usuários com fetch</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-</head>
+		<link rel="stylesheet" href="./src/css/reset.css" />
+		<link rel="stylesheet" href="./src/css/rolagem.css" />
+		<link rel="stylesheet" href="./src/css/estilos.css" />
 
-<body>
-    <main>
-        <i class="devicon-github-original"></i>
+		<title>Projeto Mini Portfólio - MapaDev Week</title>
+	</head>
+	<body>
+		<main class="cartao">
+			<div class="minhas-informacoes">
+				<img src="./src/imagens/foto jo.png" alt="foto de perfil" />
+				<h1 class="nome">Jowallison Neves Araujo</h1>
+				<h2 class="cargo">Desenvolvedor Frontend Júnior</h2>
+			</div>
 
-        <section class="container">
-            <header>
-                <h2>Buscar Usuário</h2>
-                <input type="text" id="input-search" placeholder="Digite o nome do usuário no GitHub">
-                <input type="button" value="Buscar" id="btn-search">
-            </header>
+			<div class="conteudo">
+				<ul class="abas">
+					<li class="aba selecionado" id="sobre-mim">
+						<img src="./src/imagens/sobre.gif" alt="ícone de sobre mim" />
+					</li>
 
-            <div class="profile-data"></div>
-        </section>
-    </main>
+					<li class="aba" id="minhas-redes">
+						<img src="./src/imagens/coracao.gif" alt="ícone de redes sociais" />
+					</li>
+				</ul>
 
-    <script type="module" src="src/scripts/index.js"></script>
-</body>
+				<div class="informacoes-abas">
+					<div class="informacao selecionado" id="informacao-sobre-mim">
+						<h3 class="sub-titulo">Sobre</h3>
+						<div class="descricao">
+							<p>Oi! meu nome é Jowallison Araujo, seja bem-vindo(a)!</p>
 
+							<p>
+								Sou uma pessoa apaixonada pela programação desde que eu tinha 15 anos. Sempre tive o sonho de trabalhar com programação e atualmente comecei a colocar esse sonho em prática estudando
+								<span>HTML, CSS e JavaScript.</span>
+								Gosto muito de Futebol (até demais), e meus principais hobbies são jogar , ver animes e séries. 🖖
+							</p>
+						</div>
+					</div>
+					<div class="informacao" id="informacao-minhas-redes">
+						<h3 class="sub-titulo">Minhas Redes</h3>
+						<ul class="redes-sociais">
+							<li>
+								<a href="./src/Curriculo atualizado 03 2025 ,lik portifolio pdf.pdf" target="_blank" class="curriculo">Currículo</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/jowallison-araujo-b15211232/" target="_blank" class="linkedin">Linkedln</a>
+							</li>
+							<li>
+								<a href="https://github.com/jowallison" target="_blank" class="github">GitHub</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="./src/js/index.js"></script>
+	</body>
 </html>

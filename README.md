@@ -1,2 +1,11 @@
-# projeto-inicial-fetch-github-api
-Repositório contendo os arquivos iniciais do projeto de Fetch e GitHub API
+# Projeto Mini Portfólio
+
+#
+
+[<img src="." alt="gif da tela do mini pótifolio">]
+
+# Linguagens
+
+- HTML
+- CSS
+- JS
